@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MaskedInput from "react-text-mask";
 import "./Delivery.css";
+import "./form.css"
 
 function Delivery() {
   const mask = [

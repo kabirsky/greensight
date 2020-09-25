@@ -1,0 +1,57 @@
+.label {
+  display: block;
+  position: relative;
+  font-size: 12px;
+}
+
+label.err {
+  position: absolute;
+  bottom: 14px;
+  color: #f12828;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-basis: auto;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.form__element {
+  margin-right: 12px;
+  position: relative;
+  flex: auto;
+}
+
+.form__btn {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.delivery__btn {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  width: 200px;
+  height: 48px;
+  color: #fff;
+  background: #215bf0;
+  border-radius: 80px;
+  border: #215bf0;
+  margin-right: 13px;
+
+  transition: background 0.1s linear, color 0.1s linear;
+}
+
+.delivery__btn:hover {
+  cursor: pointer;
+  background-color: #0f41c4;
+  border: #215bf0;
+}
+
+.delivery__btn:disabled {
+  background: #edeeef;
+  color: #999999;
+}

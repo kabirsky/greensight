@@ -1,0 +1,13 @@
+.form__element.map {
+    margin-bottom: 20px;
+}
+
+.label__radio {
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+}
+
+.label__radio:hover {
+    color: #215BF0;
+}
