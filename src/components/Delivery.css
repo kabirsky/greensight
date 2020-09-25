@@ -8,11 +8,20 @@
 
 .label {
   display: block;
+  position: relative;
   font-size: 12px;
+}
+
+label.err {
+  position: absolute;
+  bottom: 14px;
+  color: #f12828;
+  width: 100%;
 }
 
 .form__element {
   margin-right: 12px;
+  position: relative;
   flex: auto;
 }
 
@@ -30,6 +39,12 @@
   border: 1px solid #999999;
   border-radius: 4px;
   width: 100%;
+}
+
+.input:focus {
+  outline-width: 0;
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 
 .address__input,
@@ -52,22 +67,51 @@
   line-height: 24px;
   width: 200px;
   height: 48px;
-  color:  #fff;
-  background: #215BF0;
+  color: #fff;
+  background: #215bf0;
   border-radius: 80px;
-  border: #215BF0;
+  border: #215bf0;
   margin-right: 13px;
 
   transition: background 0.1s linear, color 0.1s linear;
 }
 
 .delivery__btn:hover {
-    cursor:pointer;
-    background-color: #0F41C4;;
-    border: #215BF0;
+  cursor: pointer;
+  background-color: #0f41c4;
+  border: #215bf0;
 }
 
-.delivery__btn:disabled{
-    background: #EDEEEF;
-    color: #999999;
+.delivery__btn:disabled {
+  background: #edeeef;
+  color: #999999;
 }
+
+.err__icon {
+  content: "";
+  display: block;
+  position: absolute;
+
+  width: 22px;
+  height: 22px;
+  background: url("../icon/error.png") no-repeat 0px 0px;
+  background-size: 22px 22px;
+  right: 13px;
+  top: 45px;
+}
+.err__icon.disable {
+  display: none;
+}
+/*
+.input.err:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("../icon/error.png") no-repeat 96% 13.5px;
+  background-size: 22px 22px;
+  right: 20px;
+  top: 20px;
+}
+*/
