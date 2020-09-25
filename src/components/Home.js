@@ -4,8 +4,8 @@ import Pickup from './Pickup'
 import "./Home.css";
 
 function Home() {
-  const [deliveryClass, setDeliveryClass] = useState("selector__btn");
-  const [pickupClass, setPickupClass] = useState("selector__btn active");
+  const [deliveryClass, setDeliveryClass] = useState("selector__btn active");
+  const [pickupClass, setPickupClass] = useState("selector__btn");
 
   const handleClickDelivery = () => {
     if (deliveryClass === "selector__btn") {
